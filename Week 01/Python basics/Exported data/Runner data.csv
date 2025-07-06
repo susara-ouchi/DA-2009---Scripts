@@ -1,0 +1,6 @@
+Data ,Value,Type
+first name,Usain,str
+last name,Bolt,str
+full name,Usain Bolt,str
+Still an athelete?,False,bool
+Olympics won,"['2008', '2012', '2016']",list
