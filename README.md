@@ -1,4 +1,10 @@
-This repository contains the weekly codes covered in class for the course DA 2009 - Data Collection Methods II
+## DA 2009 - Data Collection Methods II
 
-Week 01 - No codes
-Week 02 - Python for Data Collection (Pandas & Requests)
+This repository contains the weekly code examples covered in the course **DA 2009 - Data Collection Methods II**.
+
+### Weekly Content
+
+| Week | Topic Description                                      | Code Available |
+|------|--------------------------------------------------------|----------------|
+| 01   | Introduction to web data collection                      | No code     |
+| 02   | Python for Data Collection (Pandas & Requests)         | Yes         |
