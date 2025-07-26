@@ -1,0 +1,258 @@
+/* Smooth scrolling when clicking on anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* === Base body styling === */
+body {
+  font-family: 'Segoe UI', sans-serif;  /* Modern, clean font */
+  background-color: #030224;            /* Dark background */
+  margin: 0;
+  padding: 0;
+  color: #000000;                       /* Black text (used inside white boxes) */
+}
+
+/* === Page layout container === */
+.container {
+  max-width: 1000px;                   /* Limit width for readability */
+  margin: auto;
+  padding: 2rem;
+}
+
+/* === Header section (top area with photo & slideshow) === */
+.header {
+  display: flex;                       /* Flex layout for left and right */
+  flex-wrap: wrap;                    /* Wrap on smaller screens */
+  justify-content: space-between;
+  background-color: white;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+}
+
+/* === Left and right columns inside header === */
+.left-head,
+.right-head {
+  flex: 1 1 48%;                       /* Responsive width with some flexibility */
+  min-width: 300px;                   /* Ensure readability on small screens */
+}
+
+/* === Right side of header - slideshow container === */
+.right-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 1000px;              /* Makes it look circular */
+  min-height: 20px;
+}
+
+/* === Slideshow wrapper === */
+.css-slideshow {
+  position: relative;
+  width: 80%;
+  max-width: 100%;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+/* === Images inside slideshow === */
+.css-slideshow img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;                  /* Ensures image fills space nicely */
+  animation: fade 12s infinite;
+  opacity: 0;
+}
+
+/* === Timing for individual images to appear one after another === */
+.css-slideshow img:nth-child(1) { animation-delay: 0s; }
+.css-slideshow img:nth-child(2) { animation-delay: 4s; }
+.css-slideshow img:nth-child(3) { animation-delay: 8s; }
+.css-slideshow img:nth-child(4) { animation-delay: 12s; }
+.css-slideshow img:nth-child(5) { animation-delay: 16s; }
+.css-slideshow img:nth-child(6) { animation-delay: 20s; }
+
+/* === Keyframes for fading slideshow === */
+@keyframes fade {
+  0%   { opacity: 0; }
+  8%   { opacity: 1; }
+  33%  { opacity: 1; }
+  41%  { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+/* === Shared card styles for header and each section === */
+.header, .section {
+  background-color: white;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* === Header title styling === */
+.header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+/* === Subtitle under the name === */
+.subtitle {
+  color: #666;
+  margin-top: 5px;
+}
+
+/* === Section titles (About, Projects, etc.) === */
+.section h2 {
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+/* === Skills grid layout === */
+.info-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* === Individual box inside skill grid === */
+.info-box {
+  flex: 1 1 300px;                     /* Responsive box sizing */
+}
+
+/* === Profile photo + contact container === */
+.profile-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  text-align: left;
+}
+
+/* === Profile image container === */
+.photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* === Circular profile image === */
+.photo img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;                 /* Makes image circular */
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* === Contact details text block === */
+.contact {
+  max-width: 400px;
+  font-size: 0.95rem;
+}
+
+/* === Links in contact section === */
+.contact a {
+  color: #3366cc;
+  text-decoration: none;
+}
+
+/* === Bullet lists (used in education, projects, etc.) === */
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+/* === Footer styling === */
+.footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #777;
+  margin-top: 40px;
+}
+
+/* ===== NAVIGATION BAR STYLES ===== */
+.navbar {
+  background-color: #090230ea;        /* Semi-transparent dark blue */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;                   /* Keeps navbar at top when scrolling */
+  top: 0;
+  width: 100%;
+  z-index: 1000;                      /* Ensures it stays above other elements */
+}
+
+/* === Navbar content container === */
+.nav-container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0.8rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* === Site logo text in navbar === */
+.nav-logo {
+  font-size: 1.2rem;
+  color: #d4feff;
+}
+
+/* === Navbar links list === */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+/* === Navbar link styles === */
+.nav-links a {
+  text-decoration: none;
+  color: #d8d7ff;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+/* === Navbar link hover effect === */
+.nav-links a:hover {
+  color: #6592ec;
+}
+
+/* ===== RESPONSIVE STYLES FOR SMALL SCREENS ===== */
+@media (max-width: 600px) {
+  /* Stack navbar content vertically */
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* Stack navbar links */
+  .nav-links {
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+  }
+
+  /* Stack profile image and text in column */
+  .profile-top {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* Contact block full width on small screens */
+  .contact {
+    max-width: 100%;
+  }
+}
