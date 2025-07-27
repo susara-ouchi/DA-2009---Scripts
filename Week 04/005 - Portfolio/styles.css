@@ -1,6 +1,6 @@
 /* Smooth scrolling when clicking on anchor links */
 html {
-  scroll-behavior: smooth;
+  scroll-behavior:smooth;
 }
 
 /* === Base body styling === */
