@@ -1,0 +1,65 @@
+/* === General Page Styles === */
+body {
+  font-family: Arial, sans-serif;     /* Set default font */
+  margin: 0;                          /* Remove default margin */
+  padding: 0;                         /* Remove default padding */
+  background: #04001d;              /* Light gray background */
+  color: #000000;                   /* Dark gray text color */
+}
+
+/* === Navigation Bar === */
+.nav-container {
+  display: flex;
+  justify-content: space-between; /* Push name left, links right */
+  align-items: center; /* Vertically center both */
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Ensures it's above other content */
+  background-color: #04001db4;
+  color: white;
+  padding: 1rem 2rem;
+}
+
+nav h1 {
+  margin: 0; /* Remove default margin */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+
+/* === Header Section === */
+header {
+  text-align: center;                 /* Center the text */
+  padding: 2rem;                      /* Add space inside the header */
+  background-color: white;           /* White background */
+}
+
+/* === Section Blocks (About, Projects, Contact) === */
+section {
+  padding: 1.5rem 2rem;               /* Add spacing inside sections */
+  background-color: white;           /* White card-style background */
+  margin: 1rem;                       /* Space between sections */
+  border-radius: 8px;                /* Rounded corners */
+}
+
+/* === Footer Section === */
+footer {
+  text-align: center;                /* Center footer text */
+  padding: 1rem;                     /* Space inside footer */
+  font-size: 0.9rem;                 /* Slightly smaller text */
+  background-color: #ddd;           /* Light gray background */
+}
