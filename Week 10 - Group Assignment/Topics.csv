@@ -5,8 +5,8 @@
 3,4,Colombo Stock Exchange (CSE),https://www.cse.lk,"Stock prices, company data, announcements",Selenium,Dynamic content; use Selenium to interact with dropdowns
 4,5,Ministry of Finance,https://www.treasury.gov.lk,"Budget documents, economic policy, reports","PyPDF2, OCR",Reports are mostly PDF — ideal for document extraction
 5,6,PUCSL,https://www.pucsl.gov.lk,"Electricity tariffs, regulations, complaints data","requests, BeautifulSoup",Website structure is clean and beginner-friendly
-6,7,Sri Lanka Customs,http://www.customs.gov.lk,"Trade regulations, duty calculators, circulars","BeautifulSoup, Selenium",Basic site; data hidden in nested HTML or PDFs
+6,7,Sri Lanka Tourism Promotion Bureau,https://www.srilanka.travel,"Tourist arrival statistics, travel advisories, promotional material","requests, BeautifulSoup, Selenium",Includes monthly arrival data tables; some sections are JavaScript-rendered
 7,8,Elections Commission,https://www.elections.gov.lk,"Election results, turnout, polling info","BeautifulSoup, PyPDF2",Great for scraping result tables from past elections
 8,9,Sri Lanka Ports Authority,http://www.slpa.lk,"Port statistics, maritime notices","requests, BeautifulSoup",Data includes traffic stats and reports
 9,10,National Transport Commission (NTC),https://www.ntc.gov.lk,"Bus fares, transport schedules, permits","BeautifulSoup, OCR",Fare tables or route lists available for scraping or OCR
-10,11,Sri Lanka Tourism Promotion Bureau,https://www.srilanka.travel,"Tourist arrival statistics, travel advisories, promotional material","requests, BeautifulSoup, Selenium",Includes monthly arrival data tables; some sections are JavaScript-rendered
+10,11,Sri Lanka Customs,http://www.customs.gov.lk,"Trade regulations, duty calculators, circulars","BeautifulSoup, Selenium",Basic site; data hidden in nested HTML or PDFs
