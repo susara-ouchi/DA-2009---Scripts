@@ -6,13 +6,13 @@ This repository contains the weekly code examples covered in the course **DA 200
 
 | Week | Topic Description                                      | Code Available |
 |------|--------------------------------------------------------|----------------|
-| 01   | Introduction to web data collection                      | N/A     |
-| 02   | Python for Data Collection (Pandas & Requests)           | 7/7/2025         |
-| 03   | Quiz                                                     | N/A        |
-| 04   | HTML & Data parsing                                      | TBC         |
-| 05   | JSON APIs                                                | TBC         |
+| 01   | Introduction to web data collection                      | Yes     |
+| 02   | Python for Data Collection (Pandas & Requests)           | Yes         |
+| 03   | Quiz                                                     | Yes        |
+| 04   | HTML & Data parsing                                      | Yes         |
+| 05   | JSON APIs                                                | Yes         |
 | 06   | Individual assignment                                    | N/A         |
-| 07   | Challenges and ethics of web scraping                    | TBC         |
+| 07   | Challenges and ethics of web scraping                    | Yes         |
 | 08   | Extracting from PDFs                                     | TBC         |
 | 09   | OCR & file-based extraction                              | TBC         |
-| 10   | Group assignment                                         | N/A         |
+| 10   | Group assignment                                         | Yes         |
