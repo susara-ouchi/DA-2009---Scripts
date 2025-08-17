@@ -13,6 +13,6 @@ This repository contains the weekly code examples covered in the course **DA 200
 | 05   | JSON APIs                                                | Yes         |
 | 06   | Individual assignment                                    | N/A         |
 | 07   | Challenges and ethics of web scraping                    | Yes         |
-| 08   | Extracting from PDFs                                     | TBC         |
+| 08   | Extracting from PDFs                                     | Yes         |
 | 09   | OCR & file-based extraction                              | TBC         |
 | 10   | Group assignment                                         | Yes         |

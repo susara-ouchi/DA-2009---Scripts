@@ -1,4 +1,0 @@
-
---- Page 1 ---
-Hello!
-This is the content here.
