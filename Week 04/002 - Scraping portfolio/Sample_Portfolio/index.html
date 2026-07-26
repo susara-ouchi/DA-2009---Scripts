@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta tags for encoding and responsiveness -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
+  <!-- Page title and stylesheet -->
+  <title>Alex Morgan Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- ===== NAVIGATION BAR ===== -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <!-- Portfolio logo / name -->
+      <div class="nav-logo" style="font-family:monospace">Alex Morgan</div>
+      
+      <!-- Navigation links -->
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===== MAIN CONTAINER ===== -->
+  <div class="container">
+
+    <!-- ===== HEADER SECTION ===== -->
+    <div class="header">
+
+      <!-- Left side: Name, title, contact info -->
+      <div class="left-head">
+        <h1>Alex Morgan</h1>
+        <p class="subtitle">Data Scientist | Machine Learning Enthusiast | Statistics Graduate</p>
+
+        <!-- Profile section: image and contact info -->
+        <div class="profile-top">
+          
+          <!-- Profile photo -->
+          <div class="photo">
+            <img src="images/P1.jpg" alt="Alex Morgan">
+          </div>
+          
+          <!-- Contact information -->
+          <div class="contact">
+            <p>Email: <a href="mailto:alex.morgan@example.com">alex.morgan@example.com</a></p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/alex-morgan" target="_blank">linkedin.com/in/alex-morgan</a></p>
+            <p>GitHub: <a href="https://github.com/alex-morgan" target="_blank">github.com/alex-morgan</a></p>
+            <p>Location: Barcelona, Spain</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right side: Slideshow -->
+      <div class="right-head">
+        <div class="css-slideshow">
+          <img src="images/CS1.jpg" alt="Slide 1">
+          <img src="images/CS2.jpg" alt="Slide 2">
+          <img src="images/CS3.jpg" alt="Slide 2">
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <div class="section" id="about">
+      <h2>About Me</h2>
+      <p>My goal is to build cool data science projects and share them with the world!</p>
+    </div>
+
+    <!-- ===== EDUCATION SECTION ===== -->
+    <div class="section" id="education">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>BSc (First Class Hons) in Data Science</strong> – Monash University | GPA: 3.90 / 4.00</li>
+        <li><strong>High School</strong> – Knox School | Distinction</li>
+        <li><strong>Middle School</strong> – Glen Waverly High School| Distinction</li>
+      </ul>
+    </div>
+
+    <!-- ===== PROJECTS SECTION ===== -->
+    <div class="section" id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>DataPulse</strong>: Customer Churn Prediction with Machine Learning – Winner at DataTech 2024</li>
+        <li><strong>UrbanFlow</strong>: Travel Time Prediction with ML</li>
+        <li><strong>CreditWise</strong>: Credit Risk Classification Model</li>
+        <li><strong>StudyPath</strong>: Student Admission Predictor (R Shiny App)</li>
+      </ul>
+    </div>
+
+    <!-- ===== SKILLS SECTION ===== -->
+    <div class="section" id="skills">
+      <h2>Skills & Tools</h2>
+      <div class="info-grid">
+        <div class="info-box">
+          <strong>Programming:</strong><br>Python, R, SQL, HTML/CSS, Git
+        </div>
+        <div class="info-box">
+          <strong>Tools:</strong><br>Power BI, Tableau, Jupyter, TensorFlow, PostgreSQL
+        </div>
+        <div class="info-box">
+          <strong>Other:</strong><br>Data Visualisation, Statistical Analysis, Model Validation
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== CERTIFICATES SECTION ===== -->
+    <div class="section" id="certificates">
+      <h2>Certificates & Awards</h2>
+      <ul>
+        <li>Best Undergraduate Project – School of Computing Awards 2024</li>
+        <li>Dean’s List – Monash University (4 years)</li>
+        <li>Data Analytics Excellence Award – Faculty of IT</li>
+        <li>Presentation Competition Finalist – Data Science Society</li>
+        <li><a href="http://example.com/alex-certificates" target="_blank">See all certificates</a></li>
+      </ul>
+    </div>
+
+    <!-- ===== CONTACT FORM ===== -->
+    <div class="section" id="contact">
+      <h2>Contact Me</h2>
+      <form action="#" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+
+    <!-- ===== FOOTER ===== -->
+    <div class="footer">
+      <p>Designed by Alex Morgan | © 2026</p>
+    </div>
+
+  </div> <!-- End .container -->
+</body>
+</html>
